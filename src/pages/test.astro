@@ -1,0 +1,128 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+// You can replace these with your actual images
+const images = [
+    "https://images.unsplash.com/photo-1616578738046-8d6bbb4ee28e",
+    "https://images.unsplash.com/photo-1613390792897-aa0c06a52332",
+    "https://images.unsplash.com/photo-1613390792093-f4b4435aa4a9",
+];
+---
+
+<Layout title="Architecture Scavenger Hunt">
+    <main class="min-h-screen">
+        <!-- Hero Section -->
+        <section
+            class="h-screen flex items-center justify-center bg-primary text-white p-4"
+        >
+            <div data-aos="fade-up" class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    Architecture Scavenger Hunt
+                </h1>
+                <p class="text-xl md:text-2xl">
+                    Discover the beauty of architectural design
+                </p>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="py-20 px-4 md:px-8 bg-white">
+            <div class="max-w-4xl mx-auto" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">
+                    Overview
+                </h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Welcome to our architectural journey! This scavenger hunt
+                    will take you through various architectural marvels,
+                    teaching you about different styles, periods, and design
+                    elements. Follow the clues, observe the details, and
+                    discover the stories behind these magnificent structures.
+                </p>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section class="py-20 px-4 md:px-8 bg-gray-100">
+            <div class="max-w-6xl mx-auto">
+                <h2
+                    class="text-3xl md:text-4xl font-bold mb-12 text-center"
+                    data-aos="fade-up"
+                >
+                    Architectural Highlights
+                </h2>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                >
+                    {
+                        images.map((image, index) => (
+                            <div
+                                data-aos="fade-up"
+                                data-aos-delay={index * 100}
+                                class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            >
+                                <img
+                                    src={image}
+                                    alt={`Architecture ${index + 1}`}
+                                    class="w-full h-64 object-cover"
+                                />
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Model Section -->
+        <section class="py-20 px-4 md:px-8 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2
+                    class="text-3xl md:text-4xl font-bold mb-12 text-center"
+                    data-aos="fade-up"
+                >
+                    3D Model Exploration
+                </h2>
+                <div
+                    data-aos="fade-up"
+                    class="w-full h-[500px] bg-gray-100 rounded-lg overflow-hidden"
+                >
+                    <model-viewer
+                        src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                        alt="A 3D model of an architectural structure"
+                        camera-controls
+                        auto-rotate
+                        style="width: 100%; height: 100%;"
+                    >
+                    </model-viewer>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="py-20 px-4 md:px-8 bg-gray-100">
+            <div class="max-w-4xl mx-auto">
+                <h2
+                    class="text-3xl md:text-4xl font-bold mb-12 text-center"
+                    data-aos="fade-up"
+                >
+                    Video Tour
+                </h2>
+                <div data-aos="fade-up" class="aspect-w-16 aspect-h-9">
+                    <iframe
+                        class="w-full h-[500px] rounded-lg"
+                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                        title="Architecture Tour"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    >
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
+
+<style>
+    model-viewer {
+        --poster-color: transparent;
+    }
+</style>
