@@ -64,10 +64,7 @@ const AlbumSection = () => {
     >
       <motion.div className="flex" animate={controls} initial={{ x: "0%" }}>
         {[...imageList, ...imageList].map((src, index) => (
-          <div
-            key={index}
-            className="w-screen h-[100vh] relative flex-shrink-0"
-          >
+          <div key={index} className="w-auto h-[100vh] relative flex-shrink-0">
             <Image
               src={src}
               alt={`carousel-image-${index}`}

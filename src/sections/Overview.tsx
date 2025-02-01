@@ -2,7 +2,7 @@ export default function Overview() {
   return (
     <div className="p-10 flex flex-col justify-between h-full">
       <div>
-        <div className="md:text-2xl lg:text-3xl text:4xl">
+        <div className="text-xl md:text-2xl lg:text-2xl xl:text:4xl">
           The Beijing National Stadium, also known as the “Bird&apos;s Nest,” is
           an iconic structure located in Beijing&apos;s Olympic Green, designed
           by Swiss architects Herzog & de Meuron, artist Ai Weiwei, and China
