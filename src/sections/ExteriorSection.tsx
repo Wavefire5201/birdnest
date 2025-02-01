@@ -3,7 +3,7 @@ import Image from "next/image";
 import ext1 from "@/assets/images/ext-view-1.png";
 import ext2 from "@/assets/images/ext-view-2.png";
 
-export default function Exterior() {
+export default function ExteriorSection() {
   return (
     <section>
       <div className="text-3xl">Exterior Overview</div>

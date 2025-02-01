@@ -4,7 +4,7 @@ import arc1 from "@/assets/images/arc-view-1.png";
 import arc2 from "@/assets/images/arc-view-2.png";
 import arc3 from "@/assets/images/arc-view-3.png";
 
-export default function ArchitectureOverview() {
+export default function TechnicalSection() {
   return (
     <section>
       <div className="text-3xl">Architecture Overview</div>

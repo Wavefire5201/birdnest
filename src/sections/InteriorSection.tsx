@@ -8,6 +8,10 @@ export default function InteriorSection() {
   return (
     <section>
       <div className="text-3xl">Interior Overview</div>
+      <div>
+        This interior view of the stadium highlights its multipurpose design,
+        showing that it can even host racing events.
+      </div>
       <div className="flex flex-wrap justify-center items-center gap-4">
         <Image src={int1} alt="Interior 1" className="w-96 h-auto" />
         <Image src={int2} alt="Interior 2" className="w-96 h-auto" />
