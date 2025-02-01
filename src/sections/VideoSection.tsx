@@ -1,6 +1,6 @@
 export default function VideoSection() {
   return (
-    <div>
+    <div className="p-10 flex flex-col justify-between h-full">
       <div>
         <iframe
           width="560"
