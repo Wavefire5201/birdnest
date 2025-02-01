@@ -1,4 +1,4 @@
-export default function Credits() {
+export default function Sources() {
   return (
     <div>
       <div className="text-3xl">Credits</div>

@@ -9,7 +9,7 @@ import Earth from "@/sections/Earth";
 import BookSection from "@/sections/BookSection";
 import VideoSection from "@/sections/VideoSection";
 import ModelShowcase from "@/sections/ModelShowcase";
-import Credits from "@/sections/Credits";
+import Sources from "@/sections/Sources";
 
 let index = 0;
 
@@ -75,14 +75,14 @@ const videoSection = {
 
 const modelSection = {
   id: index++,
-  title: "Model Showcase",
+  title: "Model",
   component: ModelShowcase,
 };
 
-const creditsSection = {
+const sourcesSection = {
   id: index++,
-  title: "Credits",
-  component: Credits,
+  title: "Sources",
+  component: Sources,
 };
 
 export const sections = [
@@ -97,7 +97,7 @@ export const sections = [
   bookSection,
   videoSection,
   modelSection,
-  creditsSection,
+  sourcesSection,
 ];
 
 export type Section = {
