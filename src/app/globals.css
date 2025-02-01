@@ -2,17 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
+:root {
   --background: #ffffff;
   --foreground: #171717;
-} */
+}
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+
+html {
+  scroll-snap-type: y mandatory;
+}
 
 body {
   color: var(--foreground);
@@ -28,10 +26,6 @@ body {
   background: #4ff0b7;
   bottom: 20px;
   transform: scaleX(0);
-}
-
-html {
-  scroll-snap-type: y mandatory;
 }
 
 .container {

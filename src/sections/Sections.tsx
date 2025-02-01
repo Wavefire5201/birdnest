@@ -61,7 +61,7 @@ const articlesSection = {
 
 const albumSection = {
   id: index++,
-  title: "Album",
+  title: "Gallery",
   component: Album,
 };
 

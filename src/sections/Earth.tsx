@@ -4,7 +4,7 @@ import earth from "@/assets/images/earth-view.png";
 
 export default function Earth() {
   return (
-    <section>
+    <div className="p-10">
       <div className="text-3xl">Earth Overview</div>
       <div>
         The building is in a very urban area with it being located in Beijing,
@@ -17,6 +17,6 @@ export default function Earth() {
       <div className="flex flex-wrap justify-center items-center gap-4">
         <Image src={earth} alt="Earth" className="w-96 h-auto" />
       </div>
-    </section>
+    </div>
   );
 }

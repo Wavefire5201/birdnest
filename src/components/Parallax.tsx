@@ -22,7 +22,7 @@ function ImageParallax({ section }: { section: Section }) {
   const y = useParallax(scrollYProgress, 300);
 
   return (
-    <section className="container">
+    <div className="container">
       <div ref={ref}>
         <section.component />
       </div>
@@ -34,7 +34,7 @@ function ImageParallax({ section }: { section: Section }) {
       >
         {section.title}
       </motion.h2>
-    </section>
+    </div>
   );
 }
 

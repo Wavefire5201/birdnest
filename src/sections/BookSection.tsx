@@ -1,6 +1,6 @@
 export default function BookSection() {
   return (
-    <section>
+    <div className="p-10">
       <div className="text-3xl">
         1000 Years of Joys and Sorrows: A Memoir by Ai Weiwei, translated by
         Allan H. Barr
@@ -27,6 +27,6 @@ export default function BookSection() {
           &quot;can do whatever they want with it&quot;.
         </ul>
       </div>
-    </section>
+    </div>
   );
 }

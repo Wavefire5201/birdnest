@@ -4,11 +4,14 @@ import sketch from "@/assets/images/sketch.jpg";
 
 export default function Sketch() {
   return (
-    <section>
+    <div className="p-10">
       <div className="text-3xl">Sketch</div>
-      <div className="flex flex-wrap justify-center items-center gap-4">
-        <Image src={sketch} alt="Sketch" className="w-96 h-auto" />
+      <div className="">
+        <div className="">
+          <Image src={sketch} alt="Sketch" layout="cover" />
+        </div>
+        <div className="italic text-center pt-2">I tried my best</div>
       </div>
-    </section>
+    </div>
   );
 }
