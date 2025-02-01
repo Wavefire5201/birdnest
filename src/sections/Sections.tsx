@@ -1,15 +1,19 @@
-import Overview from "@/sections/Overview";
-import TechnicalSection from "@/sections/TechnicalSection";
-import InteriorSection from "@/sections/InteriorSection";
-import ExteriorSection from "@/sections/ExteriorSection";
-import ArticlesSection from "@/sections/ArticlesSection";
-import Album from "@/sections/AlbumSection";
-import Sketch from "@/sections/Sketch";
-import Earth from "@/sections/Earth";
-import BookSection from "@/sections/BookSection";
-import VideoSection from "@/sections/VideoSection";
-import ModelShowcase from "@/sections/ModelShowcase";
-import Sources from "@/sections/Sources";
+import dynamic from "next/dynamic";
+
+const dynamicImport = (path: string) =>
+  dynamic(() => import(path), { ssr: false });
+const Overview = dynamicImport("@/sections/Overview");
+const TechnicalSection = dynamicImport("@/sections/TechnicalSection");
+const InteriorSection = dynamicImport("@/sections/InteriorSection");
+const ExteriorSection = dynamicImport("@/sections/ExteriorSection");
+const ArticlesSection = dynamicImport("@/sections/ArticlesSection");
+const Album = dynamicImport("@/sections/AlbumSection");
+const Sketch = dynamicImport("@/sections/Sketch");
+const Earth = dynamicImport("@/sections/Earth");
+const BookSection = dynamicImport("@/sections/BookSection");
+const VideoSection = dynamicImport("@/sections/VideoSection");
+const ModelShowcase = dynamicImport("@/sections/ModelShowcase");
+const Sources = dynamicImport("@/sections/Sources");
 
 let index = 0;
 
